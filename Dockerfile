@@ -1,9 +1,10 @@
 FROM alpine:3.12
 RUN apk add --no-cache bash
+RUN apk add --no-cache zip unzip
 RUN apk add --no-cache curl
 RUN apk add --no-cache openssh
 # RUN apk add --no-cache rsync
-# RUN apk add --no-cache git
+RUN apk add --no-cache git
 RUN apk add --no-cache nodejs nodejs-npm
 RUN apk add --no-cache aws-cli
 
